@@ -1,6 +1,5 @@
 # kubectl-sops Docker hub image
 
-Supported tags and release links
 
 ## Overview
 
