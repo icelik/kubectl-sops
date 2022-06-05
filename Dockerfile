@@ -20,7 +20,7 @@ RUN apk -U upgrade \
     && wget -q https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.${TARGETOS}.${TARGETARCH} -O /usr/local/bin/sops \
     && chmod +x /usr/local/bin/sops \
     && chmod +x ./install-ksops.sh \
-    && echo "**** ${KSOPS_VERSION }****" \
+    && echo "**** ${KSOPS_VERSION} ****" \
     && ./install-ksops.sh
 
 WORKDIR /config
