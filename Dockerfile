@@ -19,7 +19,6 @@ RUN apk -U upgrade \
     && chmod g+rwx /config /root \
     && wget -q https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.${TARGETOS}.${TARGETARCH} -O /usr/local/bin/sops \
     && chmod +x /usr/local/bin/sops \
-    && curl -s https://raw.githubusercontent.com/viaduct-ai/kustomize-sops/master/scripts/install-ksops-archive.sh | bash \
     && chmod +x ./install-ksops.sh \
     && ./install-ksops.sh
 
