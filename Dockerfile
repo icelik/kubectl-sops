@@ -9,7 +9,7 @@ ARG TARGETOS
 ARG TARGETARCH
 
 
-ADD install-ksops.sh
+ADD install-ksops.sh .
 
 RUN apk -U upgrade \
     && apk add --no-cache ca-certificates bash git openssh curl gettext tar gzip \
