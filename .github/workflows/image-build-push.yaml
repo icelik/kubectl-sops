@@ -61,5 +61,6 @@ jobs:
           build-args: |
             KUBE_VERSION=${{ env.KUBE_VERSION }}
             SOPS_VERSION=${{ env.SOPS_VERSION }}
+            KSOPS_VERSION=${{ env.KSOPS_VERSION }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
