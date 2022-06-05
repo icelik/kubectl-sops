@@ -11,6 +11,7 @@ docker_build:
 	  --build-arg KUBE_VERSION=$(KUBE_VERSION) \
 	  --build-arg SOPS_VERSION=${SOPS_VERSION} \
 	  --build-arg KSOPS_VERSION=${KSOPS_VERSION} \
+	  --build-arg KUSTOMIZE_VERSION=${KUSTOMIZE_VERSION} \
 	  -t $(DOCKER_IMAGE):$(DOCKER_TAG) .
 
 docker_push:

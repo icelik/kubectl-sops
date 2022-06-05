@@ -8,7 +8,6 @@ if [[ -z "$XDG_CONFIG_HOME" ]]; then
   exit 1
 fi
 
-
 PLUGIN_PATH="$XDG_CONFIG_HOME/kustomize/plugin/viaduct.ai/v1/ksops/"
 
 echo "Verify ksops plugin directory exists and is empty"
@@ -47,9 +46,6 @@ case $(uname | tr '[:upper:]' '[:lower:]') in
     exit 1
     ;;
 esac
-
-echo "OS : ${OS}"
-echo "ARCH : ${ARCH}"
 
 echo "Downloading ksops version ${KSOPS_VERSION} to ksops plugin path $PLUGIN_PATH"
 if [ -x "$(command -v wget)" ]; then

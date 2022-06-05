@@ -62,5 +62,6 @@ jobs:
             KUBE_VERSION=${{ env.KUBE_VERSION }}
             SOPS_VERSION=${{ env.SOPS_VERSION }}
             KSOPS_VERSION=${{ env.KSOPS_VERSION }}
+            KUSTOMIZE_VERSION=${{ env.KUSTOMIZE_VERSION }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

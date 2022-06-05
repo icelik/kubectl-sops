@@ -2,12 +2,11 @@
 
 ## Overview
 
-Alpine docker image includes kubectl and sops binaries  
+Alpine docker image includes kubectl, sops binaries and ksops kustomize plugin
 
 ## Releases
 
-* [1.24.0](https://github.com/icelik/kubectl-sops/releases/tag/1.24.0) - kubectl v1.24.0, SOPS 3.7.3
-* [1.24.1](https://github.com/icelik/kubectl-sops/releases/tag/1.24.1) - kubectl v1.24.0, SOPS 3.7.3, KSOPS 3.0.2
+* [1.0.0](https://github.com/icelik/kubectl-sops/releases/tag/1.0.0) - kubectl 1.24.0, kustomize 4.5.4, SOPS 3.7.3, KSOPS 3.0.2
 
 ## Build
 
