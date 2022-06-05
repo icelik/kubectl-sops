@@ -48,8 +48,10 @@ case $(uname | tr '[:upper:]' '[:lower:]') in
     ;;
 esac
 
+echo "OS : ${OS}"
+echo "ARCH : ${ARCH}"
 
-echo "Downloading latest ${KSOPS_VERSION} to ksops plugin path $PLUGIN_PATH"
+echo "Downloading ksops version ${KSOPS_VERSION} to ksops plugin path $PLUGIN_PATH"
 if [ -x "$(command -v wget)" ]; then
     wget -c https://github.com/viaduct-ai/kustomize-sops/releases/v${KSOPS_VERSION}/download/ksops_${KSOPS_VERSION}_${OS}_${ARCH}.tar.gz -O - | tar -xz -C $PLUGIN_PATH
 elif [ -x "$(command -v curl)" ]; then
