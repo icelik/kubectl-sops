@@ -9,7 +9,7 @@ ARG TARGETOS
 ARG TARGETARCH
 
 RUN apk -U upgrade \
-    && apk add --no-cache ca-certificates bash git openssh curl gettext \
+    && apk add --no-cache ca-certificates bash git openssh curl gettext tar gzip\
     && wget -q https://storage.googleapis.com/kubernetes-release/release/v${KUBE_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl \
     && mkdir /config \
