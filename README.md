@@ -2,7 +2,7 @@
 
 ## Overview
 
-Alpine docker image includes kubectl, sops binaries and ksops kustomize plugin
+Alpine docker image includes kubectl, sops, kustomize binaries and ksops kustomize plugin
 
 ## Releases
 
