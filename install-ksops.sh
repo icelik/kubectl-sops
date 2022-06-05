@@ -53,9 +53,9 @@ echo "ARCH : ${ARCH}"
 
 echo "Downloading ksops version ${KSOPS_VERSION} to ksops plugin path $PLUGIN_PATH"
 if [ -x "$(command -v wget)" ]; then
-    wget -c https://github.com/viaduct-ai/kustomize-sops/releases/v${KSOPS_VERSION}/download/ksops_${KSOPS_VERSION}_${OS}_${ARCH}.tar.gz -O - | tar -xz -C $PLUGIN_PATH
+    wget -c https://github.com/viaduct-ai/kustomize-sops/releases/download/v${KSOPS_VERSION}/ksops_${KSOPS_VERSION}_${OS}_${ARCH}.tar.gz -O - | tar -xz -C $PLUGIN_PATH
 elif [ -x "$(command -v curl)" ]; then
-    curl -s -L https://github.com/viaduct-ai/kustomize-sops/releases/v${KSOPS_VERSION}/download/ksops_${KSOPS_VERSION}_${OS}_${ARCH}.tar.gz | tar -xz -C $PLUGIN_PATH
+    curl -s -L https://github.com/viaduct-ai/kustomize-sops/releases/download/v${KSOPS_VERSION}/ksops_${KSOPS_VERSION}_${OS}_${ARCH}.tar.gz | tar -xz -C $PLUGIN_PATH
 else
     echo "This script requires either wget or curl."
     exit 1
