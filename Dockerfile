@@ -26,7 +26,7 @@ RUN apk -U upgrade \
     && chmod +x ./install-ksops.sh \
     && ./install-ksops.sh \
     && rm -rf ./install-ksops.sh \
-    && curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh" | bash -s ${KUSTOMIZE_VERSION}
+    && curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh" | bash -s ${KUSTOMIZE_VERSION} /usr/local/bin
 
 WORKDIR /config
 
